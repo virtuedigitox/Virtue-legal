@@ -3,48 +3,174 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Virtue — Delete Account</title>
+  <title>Delete Your Account — Virtue: Digital Detox</title>
+
+  <!-- Styles -->
   <style>
-    body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial;line-height:1.5;color:#111;background:#f7fafc;padding:24px}
-    .card{max-width:820px;margin:24px auto;padding:28px;background:#fff;border-radius:12px;box-shadow:0 6px 24px rgba(10,10,10,0.06)}
-    h1{margin:0 0 8px;font-size:1.6rem}
-    p{margin:.6rem 0}
-    code{background:#eef2ff;padding:3px 6px;border-radius:6px}
-    .steps{margin-top:16px}
-    .note{background:#fff8e6;border-left:4px solid #ffd66b;padding:10px;margin-top:12px;border-radius:6px}
-    a.button{display:inline-block;padding:10px 14px;border-radius:8px;background:#2b6cb0;color:#fff;text-decoration:none;margin-top:12px}
+    :root {
+      --bg: #f4f7fa;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --brand: #4C6EF5;      /* Virtue blue vibe */
+      --brand-light: #EDF2FF;
+      --radius: 14px;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 32px 20px;
+    }
+
+    .container {
+      max-width: 880px;
+      margin: auto;
+      background: var(--card);
+      padding: 40px;
+      border-radius: var(--radius);
+      box-shadow: 0px 12px 28px rgba(0,0,0,0.06);
+      animation: fadeIn 0.7s ease;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(8px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    h2 {
+      margin-top: 32px;
+      border-left: 5px solid var(--brand);
+      padding-left: 12px;
+      font-size: 1.3rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+    }
+
+    ul {
+      margin-top: 8px;
+      padding-left: 20px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--brand-light);
+      color: var(--brand);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: .9rem;
+      margin-bottom: 20px;
+    }
+
+    .note {
+      background: #fff7e1;
+      border-left: 5px solid #f0c36d;
+      padding: 14px 16px;
+      border-radius: var(--radius);
+      margin-top: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 18px;
+      background: var(--brand);
+      color: #fff;
+      padding: 12px 18px;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .button:hover {
+      background: #3B5BDB;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: .9rem;
+      color: #333;
+      text-align: center;
+      opacity: 0.85;
+    }
   </style>
 </head>
-<body>
-  <div class="card">
-    <h1>Delete Account — Virtue</h1>
-    <p><strong>Developer:</strong> Virtue Technologies</p>
 
-    <h2>How to request deletion</h2>
-    <ol class="steps">
-      <li>Open the Virtue app → Profile → Settings → <strong>Delete Account</strong>.</li>
-      <li>Or send an email to <code>support@virtueapp.in</code> with subject <em>"Account Deletion Request"</em>. Include the email used to sign up.</li>
-      <li>We will verify your identity and then schedule deletion.</li>
+<body>
+  <div class="container">
+
+    <span class="badge">Virtue: Digital Detox</span>
+
+    <h1>Request Account Deletion</h1>
+    <p>
+      Your privacy matters. This page explains exactly how you can request deletion of your
+      Virtue: Digital Detox account and what happens to your data after the request.
+    </p>
+
+    <!-- SECTION: Contact -->
+    <h2>Contact Information</h2>
+    <p><strong>Developer Name:</strong> Virtue: Digital Detox</p>
+    <p><strong>Legal Name:</strong> Aditya Agarwal</p>
+    <p><strong>Registered Address:</strong><br>
+      H.I.G.-1 Poonam Hospital, A.D.A Colony, Jhalwa, Allahabad – 211012, India
+    </p>
+    <p><strong>Support Email:</strong> <a href="mailto:virtue.digitox@gmail.com">virtue.digitox@gmail.com</a></p>
+
+    <!-- SECTION: How to request -->
+    <h2>How to Request Account Deletion</h2>
+    <p>You can request deletion in either of these ways:</p>
+
+    <ol>
+      <li>Open the Virtue app → <strong>Profile</strong> → <strong>Settings</strong> → <strong>Delete Account</strong>.</li>
+      <li>OR email us at <strong>virtue.digitox@gmail.com</strong> with the subject:<br>
+        <em>"Account Deletion Request"</em> and include the email or phone used for login.</li>
     </ol>
 
-    <h2>What we delete</h2>
+    <a class="button" href="mailto:virtue.digitox@gmail.com?subject=Account%20Deletion%20Request">
+      Send Deletion Request Email
+    </a>
+
+    <!-- SECTION: What we delete -->
+    <h2>What Data Will Be Deleted</h2>
+    <p>Once your identity is verified, we permanently delete the following:</p>
     <ul>
-      <li>Account information (email, profile data)</li>
-      <li>Screen-time logs, block settings, commitments</li>
-      <li>Rewards and transaction history (user-visible)</li>
-      <li>Device-specific usage data tied to your account</li>
+      <li>Your account information (email, profile details)</li>
+      <li>Your screen-time data and app usage logs</li>
+      <li>Your app block configurations and commitments</li>
+      <li>Your reward history and in-app transaction history</li>
+      <li>Your device-specific tracking & analytics tied to your account</li>
     </ul>
 
-    <h2>What we may retain</h2>
+    <!-- SECTION: What we retain -->
+    <h2>What Data May Be Retained (Temporarily)</h2>
     <div class="note">
-      Retained data (anonymized or limited) for fraud prevention, legal compliance, or bookkeeping: transaction records up to 90 days. Identifiers used for audit may be kept as required by law.
+      To comply with Indian law, prevent fraud, and maintain financial audit records,
+      certain non-personal or legally required records may be retained for up to
+      <strong>90 days</strong> after deletion is completed.
+      All retained data is either anonymized or restricted to mandatory compliance logs.
     </div>
 
-    <h2>Timeline</h2>
-    <p>Account deletion requests are processed within <strong>7–14 days</strong>. You’ll get confirmation by email when deletion completes.</p>
+    <!-- SECTION: Timeline -->
+    <h2>Processing Timeline</h2>
+    <p>Your request will be processed within <strong>7–14 days</strong>.  
+       You will receive a confirmation email once your account and associated data are deleted.</p>
 
-    <p>If you need help, email <code>support@virtueapp.in</code> or click below:</p>
-    <a class="button" href="mailto:support@virtueapp.in?subject=Account%20Deletion%20Request">Email support</a>
+    <h2>Need More Help?</h2>
+    <p>Write to us at <a href="mailto:virtue.digitox@gmail.com">virtue.digitox@gmail.com</a> and we’ll assist you quickly.</p>
+
+    <div class="footer">
+      © 2025 Virtue: Digital Detox — All Rights Reserved.
+    </div>
   </div>
 </body>
 </html>
