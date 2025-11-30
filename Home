@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Virtue helps you break free from screens and take control of your time through mindful technology." />
+  <title>Virtue – Break Free from Screens</title>
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    :root {
+      --accent: #5a67d8;
+      --text: #333;
+      --bg: #f8f9fa;
+    }
+    * {
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin: 0;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: var(--accent);
+    }
+    footer {
+      background: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #eee;
+    }
+    @media (max-width: 600px) {
+      header { flex-direction: column; }
+      nav a { margin: 0 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Virtue</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#app">The App</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Virtue</h2>
+    <p><strong>Virtue</strong> is a digital wellness startup helping people break free from smartphone addiction and take back control of their time. We believe that mindful technology can help people live happier, more focused lives.</p>
+    <p>Our mission is simple: <em>Make self-control rewarding and fun.</em></p>
+  </section>
+
+  <section id="app">
+    <h2>The Virtue App</h2>
+    <p>The Virtue app lets you set time limits for distracting apps. If you exceed your limits, you lose money or go through mindful ad breaks. If you stay disciplined, you earn rewards and build better digital habits.</p>
+    <p>Download Virtue from the <a href="#" target="_blank">Google Play Store</a>.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Reach out anytime for support or feedback.</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:support@virtueapp.in">virtue.digitox@gmail.com</a></li>
+    </ul>
+    <p>Read our <a href="privacy.html">Privacy Policy</a>.</p>
+  </section>
+
+  <footer>
+    © 2025 RIPNET TECHNOLOGIES LLP. All rights reserved.
+  </footer>
+</body>
+</html>
